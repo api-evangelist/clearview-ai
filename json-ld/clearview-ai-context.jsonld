@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "clearview": "https://www.clearview.ai/ns/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+
+    "FaceMatch": {
+      "@id": "clearview:FaceMatch",
+      "@context": {
+        "id": "clearview:id",
+        "probeImage": "clearview:probe_image",
+        "score": "clearview:match_score",
+        "sourceUrl": {
+          "@id": "schema:url",
+          "@type": "@id"
+        },
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Investigation": {
+      "@id": "clearview:Investigation",
+      "@context": {
+        "id": "clearview:id",
+        "caseNumber": "clearview:case_number",
+        "agency": "schema:memberOf",
+        "investigator": "clearview:investigator",
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "User": {
+      "@id": "clearview:User",
+      "@context": {
+        "id": "clearview:id",
+        "name": "schema:name",
+        "agency": "schema:memberOf",
+        "role": "clearview:role"
+      }
+    },
+
+    "AuditEvent": {
+      "@id": "clearview:AuditEvent",
+      "@context": {
+        "id": "clearview:id",
+        "actor": "clearview:actor",
+        "action": "clearview:action",
+        "timestamp": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+aid: clearview-ai
+name: Clearview AI
+description: >-
+  Clearview AI is a U.S.-based facial recognition company providing
+  identity verification, investigative search, and biometric matching
+  services primarily to law enforcement, government agencies, and
+  approved financial sector customers. The platform indexes publicly
+  available images and exposes proprietary facial recognition
+  technology through a controlled, customer-vetted developer surface.
+  Public technical documentation of the API is intentionally limited;
+  access is gated, and integrations are scoped through customer
+  agreements with strict use-case, audit, and transparency
+  requirements.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/clearview-ai/refs/heads/main/apis.yml
+created: '2024-01-01'
+modified: '2026-04-23'
+specificationVersion: '0.19'
+x-type: company
+tags:
+  - Biometrics
+  - Facial Recognition
+  - Identity
+  - Investigations
+  - Law Enforcement
+  - Surveillance
+apis:
+  - aid: clearview-ai:facial-recognition
+    name: Clearview AI Facial Recognition Platform
+    tags:
+      - Biometrics
+      - Facial Recognition
+      - Identity Verification
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.clearview.ai/
+    properties:
+      - url: https://www.clearview.ai/
+        type: Website
+      - url: https://www.clearview.ai/post/transparency-report
+        type: Transparency
+    description: >-
+      The Clearview AI facial recognition platform provides image-based
+      identity matching backed by an indexed corpus of publicly
+      available imagery. Access is restricted to vetted government,
+      law enforcement, and financial-services customers under
+      contractual use-case constraints. Technical integration details
+      are not publicly documented; customers receive credentials,
+      endpoints, and reference material directly from Clearview AI
+      after onboarding.
+  - aid: clearview-ai:investigation-tools
+    name: Clearview AI Investigation Tools
+    tags:
+      - Investigations
+      - Law Enforcement
+      - Search
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.clearview.ai/law-enforcement
+    properties:
+      - url: https://www.clearview.ai/law-enforcement
+        type: Documentation
+    description: >-
+      Clearview AI offers investigation tooling for vetted law
+      enforcement and public-safety users that surfaces matching
+      imagery and source links for an uploaded probe image. Workflow
+      tooling is delivered through a hosted user interface; programmatic
+      access, when granted, is governed by separate customer agreements.
+  - aid: clearview-ai:financial-services
+    name: Clearview AI Financial Services
+    tags:
+      - Financial Services
+      - Identity Verification
+      - KYC
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.clearview.ai/
+    properties:
+      - url: https://www.clearview.ai/
+        type: Documentation
+    description: >-
+      Clearview AI markets identity-verification capabilities to
+      regulated financial-services customers for fraud prevention,
+      KYC enrichment, and investigative review. Integration is
+      delivered as a vendor-managed service with contractual
+      controls; public API documentation is not provided.
+common:
+  - type: Website
+    url: https://www.clearview.ai/
+  - type: About
+    url: https://www.clearview.ai/about-us
+  - type: Transparency
+    url: https://www.clearview.ai/post/transparency-report
+  - type: Privacy Policy
+    url: https://www.clearview.ai/privacy-policy
+  - type: Terms of Service
+    url: https://www.clearview.ai/terms-of-service
+  - type: Contact
+    url: https://www.clearview.ai/contact
+  - type: News
+    url: https://www.clearview.ai/news
+  - type: JSON-LD
+    url: json-ld/clearview-ai-context.jsonld
+  - type: Spectral
+    url: rules/clearview-ai-rules.yml
+  - type: Naftiko Capabilities
+    url: capabilities/clearview-ai.yaml
+maintainers:
+  - FN: Kin Lane
+    email: kinlane@gmail.com

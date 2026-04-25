@@ -1,0 +1,83 @@
+extends:
+  - spectral:oas
+
+# Spectral linting rules for any Clearview AI integration spec.
+# Public API documentation is intentionally minimal; these rules
+# enforce baseline hygiene appropriate for a high-risk biometric
+# vendor surface (HTTPS-only, authenticated, audited).
+rules:
+  clearview-info-contact:
+    description: API contact information must be present.
+    severity: error
+    given: "$.info"
+    then:
+      field: contact
+      function: truthy
+
+  clearview-info-license:
+    description: API license must be declared.
+    severity: warn
+    given: "$.info"
+    then:
+      field: license
+      function: truthy
+
+  clearview-server-https:
+    description: All server URLs must use HTTPS.
+    severity: error
+    given: "$.servers[*].url"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^https://"
+
+  clearview-security-required:
+    description: A security scheme must be defined.
+    severity: error
+    given: "$.components.securitySchemes"
+    then:
+      function: truthy
+
+  clearview-operation-tags:
+    description: Every operation must declare at least one tag.
+    severity: warn
+    given: "$.paths[*][get,post,put,patch,delete]"
+    then:
+      field: tags
+      function: schema
+      functionOptions:
+        schema:
+          type: array
+          minItems: 1
+
+  clearview-operation-summary:
+    description: Every operation must include a short summary.
+    severity: warn
+    given: "$.paths[*][get,post,put,patch,delete]"
+    then:
+      field: summary
+      function: truthy
+
+  clearview-operation-id:
+    description: Every operation must declare a unique operationId.
+    severity: error
+    given: "$.paths[*][get,post,put,patch,delete]"
+    then:
+      field: operationId
+      function: truthy
+
+  clearview-error-responses:
+    description: Mutating operations should declare 4xx error responses.
+    severity: warn
+    given: "$.paths[*][post,put,patch,delete].responses"
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          anyOf:
+            - required: ["400"]
+            - required: ["401"]
+            - required: ["403"]
+            - required: ["404"]
+            - required: ["422"]

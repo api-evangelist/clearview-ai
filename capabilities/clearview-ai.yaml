@@ -1,0 +1,62 @@
+# Naftiko capabilities profile for Clearview AI.
+# These are descriptive workflow capabilities derived from publicly
+# stated Clearview AI product surfaces. Public API documentation
+# does not exist; these capabilities are not bound to public OpenAPI
+# operations and serve as a reference taxonomy for vetted integrators.
+provider: clearview-ai
+name: Clearview AI
+description: >-
+  Clearview AI provides facial recognition and identity matching
+  services to vetted government, law enforcement, and financial
+  customers. These capabilities describe high-level workflows the
+  platform supports.
+capabilities:
+  - id: clearview-ai.search.face
+    name: Search by face
+    description: Submit a probe image and retrieve candidate matches with source URLs.
+    inputs:
+      - probe-image
+    outputs:
+      - matches
+      - score
+      - source-url
+
+  - id: clearview-ai.investigation.create
+    name: Create investigation
+    description: Open a case to group probe submissions and findings.
+    inputs:
+      - case-number
+      - agency
+      - investigator
+    outputs:
+      - investigation-id
+
+  - id: clearview-ai.investigation.append-finding
+    name: Append finding to investigation
+    description: Attach a face-match result to an open investigation.
+    inputs:
+      - investigation-id
+      - match-id
+      - notes
+    outputs:
+      - finding-id
+
+  - id: clearview-ai.user.list
+    name: List authorized users
+    description: Enumerate vetted users authorized to query the platform.
+    inputs:
+      - agency
+    outputs:
+      - users
+
+  - id: clearview-ai.audit.list
+    name: List audit events
+    description: Retrieve audit-log events for an agency, user, or case.
+    inputs:
+      - agency
+      - user
+      - case-number
+      - from
+      - to
+    outputs:
+      - events
