@@ -17,7 +17,7 @@ url: https://raw.githubusercontent.com/api-evangelist/clearview-ai/refs/heads/ma
 created: '2024-01-01'
 modified: '2026-04-23'
 specificationVersion: '0.19'
-x-type: company
+kind: company
 tags:
   - Biometrics
   - Facial Recognition
@@ -89,15 +89,15 @@ common:
     url: https://www.clearview.ai/about-us
   - type: Transparency
     url: https://www.clearview.ai/post/transparency-report
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.clearview.ai/privacy-policy
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.clearview.ai/terms-of-service
   - type: Contact
     url: https://www.clearview.ai/contact
   - type: News
     url: https://www.clearview.ai/news
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/clearview-ai-context.jsonld
   - type: Spectral
     url: rules/clearview-ai-rules.yml
