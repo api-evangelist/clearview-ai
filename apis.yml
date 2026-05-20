@@ -83,6 +83,8 @@ apis:
       delivered as a vendor-managed service with contractual
       controls; public API documentation is not provided.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/clearviewai
   - type: Website
     url: https://www.clearview.ai/
   - type: About
