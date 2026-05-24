@@ -105,6 +105,8 @@ common:
     url: rules/clearview-ai-rules.yml
   - type: Naftiko Capabilities
     url: capabilities/clearview-ai.yaml
+  - type: LLMsTxt
+    url: https://clearview.ai/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kinlane@gmail.com
