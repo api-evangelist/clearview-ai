@@ -103,9 +103,9 @@ common:
     url: json-ld/clearview-ai-context.jsonld
   - type: Spectral
     url: rules/clearview-ai-rules.yml
-  - type: Naftiko Capabilities
+  - type: X-NaftikoCapabilities
     url: capabilities/clearview-ai.yaml
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://clearview.ai/llms.txt
 maintainers:
   - FN: Kin Lane
