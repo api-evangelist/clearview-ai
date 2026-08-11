@@ -116,8 +116,6 @@ common:
     url: json-ld/clearview-ai-context.jsonld
   - type: Spectral
     url: rules/clearview-ai-rules.yml
-  - type: X-NaftikoCapabilities
-    url: capabilities/clearview-ai.yaml
   - type: LlmsText
     url: https://clearview.ai/llms.txt
   - url: https://www.clearview.ai/blog-feed.xml
