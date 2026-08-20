@@ -79,6 +79,10 @@ apis:
   - aid: clearview-ai:financial-services
     name: Clearview AI Financial Services
     tags:
+      - Financial-Services
+      - Identity Verification
+      - KYC
+    tags_raw:
       - Financial Services
       - Identity Verification
       - KYC
