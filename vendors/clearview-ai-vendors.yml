@@ -1,0 +1,13 @@
+generated: '2026-09-25'
+method: probed
+source: 'reconcile-ptr-only.py: an MCP server the provider serves through a vendor implementation'
+registry: all/0-working/vendors.yml
+vendors:
+- vendor: wix
+  area: mcp-hosting
+  host: www.clearview.ai
+  evidence: mcp:https://www.clearview.ai/_api/mcp
+  signal: mcp-handshake
+  confidence: high
+  kin_score:
+  - mcp_server
