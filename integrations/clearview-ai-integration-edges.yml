@@ -1,0 +1,49 @@
+edges:
+- partner_name: NIST FRTE/FATE (face recognition technology evaluation)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://pages.nist.gov/frvt/html/frvt11.html
+  category: biometric algorithm evaluation
+  contract_reference:
+    register: 'NIST FRTE / FATE (pages.nist.gov/frvt: 1:1, 1:N, age estimation, paperless travel, twins)'
+    standard: NIST FRTE/FATE
+    spec_file: null
+    role: nist-frte-participant
+    registered_name: Clearview AI Inc
+    registered_country: US
+    register_id: https://pages.nist.gov/frvt/html/frvt11.html
+    matched_domain: clearview.ai
+    matched_by: domain
+    identity: wikidata Q82969314 'Clearview AI' P856 https://www.clearview.ai/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    tracks:
+    - frte-1to1
+    - frte-1toN
+    - frte-paperless-travel
+    signals:
+      best_1to1_rank: 23
+      top10_1to1: false
+    signal_note: 'participation only: NIST evaluates, it does not certify. A top-tier rank is a signal recorded
+      for context, never certified_products, and algorithm / track counts are never counted'
+    detected_by: sweep-biometrics-testing.py
+    detected: '2026-10-20'
+  detected_by: sweep-biometrics-testing.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://pages.nist.gov/frvt/html/frvt11.html
+- https://pages.nist.gov/frvt/html/frvt1N.html
+- https://pages.nist.gov/IREX10/
+- https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
+- https://fidoalliance.org/certification/identity-verification/face-verification/fido-certified-products/
+checked:
+- https://fidoalliance.org/certification/identity-verification/face-verification/fido-certified-products/
+- https://pages.nist.gov/IREX10/
+- https://pages.nist.gov/frvt/html/frvt11.html
+- https://pages.nist.gov/frvt/html/frvt1N.html
+- https://www.ibeta.com/iso-30107-3-presentation-attack-detection-confirmation-letters/
