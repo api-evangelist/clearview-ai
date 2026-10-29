@@ -1,4 +1,4 @@
-# Clearview AI (clearview-ai)
+# Clearview AI
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,54 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Clearview AI is a U.S.-based facial recognition company providing identity verification, investigative search, and biometric matching services primarily to law enforcement, government agencies, and approved financial sector customers. Public technical documentation of the API is intentionally limited; access is gated and integrations are scoped through customer agreements.
+Clearview AI is a U.S.-based facial recognition company providing identity verification, investigative search, and biometric matching services primarily to law enforcement, government agencies, and approved financial sector customers. The platform indexes publicly available images and exposes proprietary facial recognition technology through a controlled, customer-vetted developer surface. Public technical documentation of the API is intentionally limited; access is gated, and integrations are scoped through customer agreements with strict use-case, audit, and transparency requirements.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/clearview-ai/refs/heads/main/apis.yml)
+**Areas:** Biometrics · Facial Recognition · Identity · Investigations · Law Enforcement · Surveillance
 
-## Scope
+## Clearview AI on APIs.io
 
-- **Type:** Index
-- **x-type:** company
+Everything profiled for Clearview AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/clearview-ai/](https://apis.io/providers/clearview-ai/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- Biometrics, Facial Recognition, Identity, Investigations, Law Enforcement, Surveillance
+- [Clearview AI Facial Recognition Platform](https://apis.io/apis/clearview-ai/facial-recognition/) — The Clearview AI facial recognition platform provides image-based identity matching backed by an indexed corpus of publicly available imagery. Access is…
+- [Clearview AI Investigation Tools](https://apis.io/apis/clearview-ai/investigation-tools/) — Clearview AI offers investigation tooling for vetted law enforcement and public-safety users that surfaces matching imagery and source links for an uploaded…
+- [Clearview AI Financial Services](https://apis.io/apis/clearview-ai/financial-services/) — Clearview AI markets identity-verification capabilities to regulated financial-services customers for fraud prevention, KYC enrichment, and investigative…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### Clearview AI Facial Recognition Platform
-Image-based identity matching against an indexed corpus of publicly available imagery, restricted to vetted customers.
+Model Context Protocol servers that expose the API to agents.
 
-**Human URL:** [https://www.clearview.ai/](https://www.clearview.ai/)
+- [Moved to /providers/clearview-ai/](https://apis.io/servers/clearview-ai/clearview-ai/)
 
-### Clearview AI Investigation Tools
-Investigation tooling for vetted law enforcement and public-safety users.
+#### JSON-LD (1)
 
-**Human URL:** [https://www.clearview.ai/law-enforcement](https://www.clearview.ai/law-enforcement)
+Linked-data contexts for the provider's vocabulary.
 
-### Clearview AI Financial Services
-Identity-verification capabilities for regulated financial-services customers.
+- [Clearview Ai Context](https://apis.io/jsonld/clearview-ai/clearview-ai-context/)
 
-**Human URL:** [https://www.clearview.ai/](https://www.clearview.ai/)
+#### Governance rules (1)
 
-## Common Properties
+Spectral rulesets for the provider's contracts.
+
+- [Clearview AI API Rules](https://apis.io/rules/clearview-ai/clearview-ai-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Clearview Ai Domain Security](https://apis.io/security/clearview-ai/clearview-ai-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.clearview.ai/)
-- [About](https://www.clearview.ai/about-us)
-- [Transparency](https://www.clearview.ai/post/transparency-report)
-- [Privacy Policy](https://www.clearview.ai/privacy-policy)
-- [Terms of Service](https://www.clearview.ai/terms-of-service)
-- [JSON-LD Context](json-ld/clearview-ai-context.jsonld)
-- [Spectral Ruleset](rules/clearview-ai-rules.yml)
-- [Naftiko Capabilities](capabilities/clearview-ai.yaml)
+- [Blog](https://www.clearview.ai/blog-feed.xml)
+- [Terms of service](https://www.clearview.ai/terms-of-service)
+- [Privacy policy](https://www.clearview.ai/privacy-policy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 16.9** — emerging · rubric 0.25.0 · scored 2026-10-23
 
-**Email:** kinlane@gmail.com
+| Facet | Score |
+|---|---|
+| Discoverability | 72.5 |
+| Contract quality | 6.7 |
+| Contract governance | 11.4 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 21.1 |
+
+**Agent readiness 8.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 17.9** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/clearview-ai/](https://apis.io/providers/clearview-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Clearview AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/clearview-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
